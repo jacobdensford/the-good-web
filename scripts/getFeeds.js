@@ -17,6 +17,7 @@ async function translateOPML(opmlPath) {
             .find("outline")
             .each((n, subElem) => {
                 feeds[$(elem).attr("text")].push($(subElem).attr("xmlUrl"));
+                // Maybe each feed is an object like "text": { "xmlUrl": <url>, "url": <url>  }. Something like that.
             });
     });
     return [title, feeds];
@@ -46,10 +47,20 @@ async function getFeeds(feedsInput, age, count) {
                     timeout(15000),
                 ]);
             } catch (err) {
-                failedFeeds.push(url);
-                console.log(`Failed to fetch: ${url}`);
-                console.log(err.message);
-                continue;
+                    console.log(`Failed to fetch: ${url}`);
+                    console.log('Trying again...');
+                try {
+                    feed = await Promise.race([
+                        parser.parseURL(url),
+                        timeout(30000),
+                    ]);
+                } catch {
+                    failedFeeds.push(url);
+                    console.log(`Failed to fetch: ${url}`);
+                    console.log('Giving up.');
+                    console.log(err.message);
+                    continue;
+                }
             }
             if (feed) {
                 try {

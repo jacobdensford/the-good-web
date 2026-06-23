@@ -188,10 +188,12 @@ footer a {
     font-style: italic;
 }
 
-.under-construction {
-    text-transform: uppercase;
-    transform: rotate(-3deg);
-    margin: 2rem;
+.further-reading {
+    margin: 0 1rem 1rem;
+    padding: 0 1rem;
+    color: var(--gray);
+    font-size: 0.8em;
+    border: 1px solid var(--light-gray);
 }
 
 .topic {
