@@ -17,6 +17,7 @@ async function translateOPML(opmlPath) {
             .find("outline")
             .each((n, subElem) => {
                 feeds[$(elem).attr("text")].push($(subElem).attr("xmlUrl"));
+                // Maybe each feed is an object like "text": { "xmlUrl": <url>, "url": <url>  }. Something like that.
             });
     });
     return [title, feeds];
@@ -43,7 +44,7 @@ async function getFeeds(feedsInput, age, count) {
             try {
                 feed = await Promise.race([
                     parser.parseURL(url),
-                    timeout(15000),
+                    timeout(30000),
                 ]);
             } catch (err) {
                 failedFeeds.push(url);
