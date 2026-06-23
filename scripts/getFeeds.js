@@ -44,13 +44,23 @@ async function getFeeds(feedsInput, age, count) {
             try {
                 feed = await Promise.race([
                     parser.parseURL(url),
-                    timeout(30000),
+                    timeout(15000),
                 ]);
             } catch (err) {
-                failedFeeds.push(url);
-                console.log(`Failed to fetch: ${url}`);
-                console.log(err.message);
-                continue;
+                    console.log(`Failed to fetch: ${url}`);
+                    console.log('Trying again...');
+                try {
+                    feed = await Promise.race([
+                        parser.parseURL(url),
+                        timeout(30000),
+                    ]);
+                } catch {
+                    failedFeeds.push(url);
+                    console.log(`Failed to fetch: ${url}`);
+                    console.log('Giving up.');
+                    console.log(err.message);
+                    continue;
+                }
             }
             if (feed) {
                 try {
