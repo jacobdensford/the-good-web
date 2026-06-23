@@ -12,7 +12,7 @@ An introduction and step-by-step guide to actually using the world wide web, and
 - Optionally set `weeklyEditionDay` in `scripts/goToPrint.js`
 - Run `npm run fetch` to get feeds
 - Deploy to static web host
-- Run `npm run fetch` to update
+- Run `npm run fetch` to update and push updates to host
 
 ## To Do
 
@@ -22,4 +22,3 @@ An introduction and step-by-step guide to actually using the world wide web, and
 - [ ] Make good default opml
 - [ ] Add more sizes of favicons
 - [ ] Add keyboard navigation
-- [ ] When doing both a daily and a weekly fetch, reuse data from weekly to populate daily?
