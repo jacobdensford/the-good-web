@@ -99,6 +99,7 @@
       <outline text="The Markup" title="The Markup" type="rss" xmlUrl="https://themarkup.org/feeds/rss.xml" htmlUrl="https://themarkup.org/"/>
     </outline>
     <outline text="other" title="other">
+      <outline text="Crucial Tracks Blogs" title="Crucial Tracks Blog" type="rss" xmlUrl="https://www.crucialtracks.org/blog/feed.xml" htmlUrl="https://www.crucialtracks.org/blog/" />
       <outline text="HUDS+GUIS" title="HUDS+GUIS" type="rss" xmlUrl="https://feeds.feedburner.com/Hudsandguis" htmlUrl="https://www.hudsandguis.com/"/>
       <outline text="Colossal" title="Colossal" type="rss" xmlUrl="https://www.thisiscolossal.com/feed/" htmlUrl="https://www.thisiscolossal.com/"/>
       <outline text="Electric Literature" title="Electric Literature" type="rss" xmlUrl="https://electricliterature.com/feed/" htmlUrl="https://electricliterature.com/"/>
