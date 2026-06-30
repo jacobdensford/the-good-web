@@ -72,6 +72,7 @@
       <outline text="Coins and Scrolls" title="Coins and Scrolls" type="rss" xmlUrl="https://coinsandscrolls.blogspot.com/feeds/posts/default" htmlUrl="https://coinsandscrolls.blogspot.com"/>
     </outline>
     <outline text="tech" title="tech">
+      <outline text="Read Only Memo" title="Read Only Memo" type="rss" xmlUrl="https://readonlymemo.com/rss" htmlUrl="https://readonlymemo.com/" />
       <outline text="GamingOnLinux.com Latest Articles" title="GamingOnLinux.com Latest Articles" type="rss" xmlUrl="https://www.gamingonlinux.com/article_rss.php" htmlUrl="https://www.gamingonlinux.com/"/>
       <outline text="This Week in Videogames" title="This Week in Videogames" type="rss" xmlUrl="https://thisweekinvideogames.com/feed/" htmlUrl="https://thisweekinvideogames.com/"/>
       <outline text="LOW←TECH MAGAZINE English" title="LOW←TECH MAGAZINE English" type="rss" xmlUrl="https://solar.lowtechmagazine.com/posts/index.xml" htmlUrl="https://solar.lowtechmagazine.com/posts/"/>
