@@ -4,41 +4,17 @@
 
 *Welcome to the good web.*
 
-The Good Web is an introduction to the independent web, a guide to becoming part of it, and a feed reader with a collection of feeds to get started.
-
-<!--
-
-## Philosophy
-
-The web is more than a handful of social media platforms.
-
-The Good Web encourages discovering independent websites, curating your own sources instead of relying on algorithms, participating in online communities, and creating a space of your own. The project aims to make the independent web easier to find and easier to join.
-
--->
+The Good Web is an introduction to the independent web, a guide to becoming part of it, and a feed reader with a collection of feeds to get started. 
 
 ## Details
 
 ### Introduction and Guide
 
-TKTK
+The homepage introduces the independent web and walks newcomers though discovering website, curating their own collection of feeds (and selecting a feed reader), participating in online communities, and creating a website of their own.
 
 ### Feed Reader and Feeds
 
-TKTK
-
-<!--
-
-## Details
-
-### Introduction and Guide
-
-The homepage introduces the independent web and walks newcomers through discovering websites, curating their own collection of feeds, participating in online communities, and creating a website of their own. It is intended as a practical guide rather than a comprehensive history or manifesto.
-
-### Feed Reader and Feeds
-
-The Good Web also includes a static feed reader that aggregates a curated collection of RSS and Atom feeds into daily and weekly editions. The default feed collection focuses on personal websites, blogs, digital gardens, hobby projects, and other independently published content, but you can replace it with your own OPML file to create a feed reader tailored to your interests.
-
--->
+The Good Web also includes a static feed reader that aggregates a curated collection of RSS and Atom feeds into daily and weekly editions. The default feed collection encompasses topics of interest to a wide audience, as well as my own preferences, but it can be replaced with a user's own OPML file (see [Development](#development) below).
 
 ## Usage
 
@@ -46,22 +22,9 @@ The Good Web also includes a static feed reader that aggregates a curated collec
 
 Visit [web.cobb.land](https://web.cobb.land) to use The Good Web.
 
-- The homepage is the introduction and guide to the independent web
-- Clicking "DAILY" in the heading will take you to the "The Good Web Daily" and "WEEKLY" to "The Good Web Weekly"
-- Read, following links, explore, learn
-
-<!--
-
-## Usage
-
-Visit https://web.cobb.land.
-
 - Read the homepage for an introduction to the independent web.
-- Browse the daily or weekly editions to discover new websites.
-- Follow interesting links and subscribe to feeds you enjoy.
+- Browse the daily or weekly editions to discover new websites and read posts.
 - Clone the project and replace the included OPML file with your own collection to build a personalized feed reader.
-
--->
 
 ## Development
 
@@ -76,7 +39,7 @@ Visit https://web.cobb.land.
 ## Roadmap
 
 - [ ] Further articulate opinions on "opinionated" page
-- [ ] Make better default opml for introduction to the good web
+- [ ] Make better default OPML for introduction to the good web
 - [ ] Add keyboard navigation
 
 ## Contribute
@@ -91,8 +54,3 @@ If you would like to contribute to this project, please fork and make a pull req
 
 [hello@jacobdensford.com](mailto:hello@jacobdensford.com)
 
-## Acknowledgements
-
-- TKTK
-- TKTK
-- TKTK
