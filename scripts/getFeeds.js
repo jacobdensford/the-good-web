@@ -6,6 +6,22 @@ const weekly = "weekly/index.html";
 const daily = "daily/index.html";
 const opmlFeeds = "data/feeds.opml";
 
+function escapeHtml(text, $) {
+    return $("<div>").text(text ?? "").html();
+}
+
+function safeUrl(url) {
+    try {
+        const parsed = new URL(url);
+        if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+            return parsed.href;
+        }
+    } catch {
+        console.log("Bad URL!")
+    }
+    return "#";
+}
+
 async function translateOPML(opmlPath) {
     const opml = await fs.readFile(opmlPath, "utf-8");
     const $ = cheerio.load(opml, { xml: true });
@@ -202,8 +218,8 @@ async function updateHTML(htmlPath, feedsTitle, feedsInput, age, count) {
                             feedPosts +
                             `
                             <li class="post more-posts">
-                                <a href="${post.postLink}">
-                                    <div class="post-title">${post.postTitle}</div>
+                                <a href="${safeUrl(post.postLink)}">
+                                    <div class="post-title">${escapeHtml(post.postTitle, $)}</div>
                                 </a>
                             </li>
                         `;
@@ -212,8 +228,8 @@ async function updateHTML(htmlPath, feedsTitle, feedsInput, age, count) {
                             feedPosts +
                             `
                             <li class="post">
-                                <a href="${post.postLink}">
-                                    <div class="post-title">${post.postTitle}</div>
+                                <a href="${safeUrl(post.postLink)}">
+                                    <div class="post-title">${escapeHtml(post.postTitle, $)}</div>
                                     <div class="recency">${post.postRecency}</div>
                                 </a>
                             </li>
