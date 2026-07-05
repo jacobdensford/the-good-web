@@ -5,8 +5,7 @@ async function goToPrint() {
     const today = new Date();
     const day = today.getDay();
     if (day === weeklyEditionDay) {
-        buildTheGoodWeb({runWeekly: true});
-        buildTheGoodWeb();
+        buildTheGoodWeb({runWeekly: true, runDaily: true});
     } else {
         buildTheGoodWeb();
     }
